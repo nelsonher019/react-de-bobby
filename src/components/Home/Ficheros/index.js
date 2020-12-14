@@ -6,11 +6,11 @@ function Ficheros() {
   return (
     <Fragment>
       <StyleFicheros>
-        <div className="container-files">
+        <div className="container-files scroll-container">
           <div className="grid-double">
             <div className="grid-file">
               <div>
-              <IconExtension extension={"png"} />
+                <IconExtension extension={"png"} />
               </div>
               <div>nelson.png</div>
               <div>
@@ -19,7 +19,7 @@ function Ficheros() {
             </div>
             <div className="grid-file">
               <div>
-                <IconExtension extension="mp3"/>
+                <IconExtension extension="txt" />
               </div>
               <div>iotask-mob-m28-03.mp3</div>
               <div>
@@ -27,6 +27,156 @@ function Ficheros() {
               </div>
             </div>
           </div>
+
+
+          <div className="grid-double">
+            <div className="grid-file">
+              <div>
+                <IconExtension extension={"png"} />
+              </div>
+              <div>nelson.png</div>
+              <div>
+                <img src="more_horiz-24px.svg" alt="" />
+              </div>
+            </div>
+            <div className="grid-file">
+              <div>
+                <IconExtension extension="txt" />
+              </div>
+              <div>iotask-mob-m28-03.mp3</div>
+              <div>
+                <img src="more_horiz-24px.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid-double">
+            <div className="grid-file">
+              <div>
+                <IconExtension extension={"png"} />
+              </div>
+              <div>nelson.png</div>
+              <div>
+                <img src="more_horiz-24px.svg" alt="" />
+              </div>
+            </div>
+            <div className="grid-file">
+              <div>
+                <IconExtension extension="txt" />
+              </div>
+              <div>iotask-mob-m28-03.mp3</div>
+              <div>
+                <img src="more_horiz-24px.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid-double">
+            <div className="grid-file">
+              <div>
+                <IconExtension extension={"png"} />
+              </div>
+              <div>nelson.png</div>
+              <div>
+                <img src="more_horiz-24px.svg" alt="" />
+              </div>
+            </div>
+            <div className="grid-file">
+              <div>
+                <IconExtension extension="txt" />
+              </div>
+              <div>iotask-mob-m28-03.mp3</div>
+              <div>
+                <img src="more_horiz-24px.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+
+          <div className="grid-double">
+            <div className="grid-file">
+              <div>
+                <IconExtension extension={"png"} />
+              </div>
+              <div>nelson.png</div>
+              <div>
+                <img src="more_horiz-24px.svg" alt="" />
+              </div>
+            </div>
+            <div className="grid-file">
+              <div>
+                <IconExtension extension="txt" />
+              </div>
+              <div>iotask-mob-m28-03.mp3</div>
+              <div>
+                <img src="more_horiz-24px.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid-double">
+            <div className="grid-file">
+              <div>
+                <IconExtension extension={"png"} />
+              </div>
+              <div>nelson.png</div>
+              <div>
+                <img src="more_horiz-24px.svg" alt="" />
+              </div>
+            </div>
+            <div className="grid-file">
+              <div>
+                <IconExtension extension="txt" />
+              </div>
+              <div>iotask-mob-m28-03.mp3</div>
+              <div>
+                <img src="more_horiz-24px.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid-double">
+            <div className="grid-file">
+              <div>
+                <IconExtension extension={"png"} />
+              </div>
+              <div>nelson.png</div>
+              <div>
+                <img src="more_horiz-24px.svg" alt="" />
+              </div>
+            </div>
+            <div className="grid-file">
+              <div>
+                <IconExtension extension="txt" />
+              </div>
+              <div>iotask-mob-m28-03.mp3</div>
+              <div>
+                <img src="more_horiz-24px.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid-double">
+            <div className="grid-file">
+              <div>
+                <IconExtension extension={"png"} />
+              </div>
+              <div>nelson.png</div>
+              <div>
+                <img src="more_horiz-24px.svg" alt="" />
+              </div>
+            </div>
+            <div className="grid-file">
+              <div>
+                <IconExtension extension="txt" />
+              </div>
+              <div>iotask-mob-m28-03.mp3</div>
+              <div>
+                <img src="more_horiz-24px.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <br/><br/>
         </div>
       </StyleFicheros>
     </Fragment>
@@ -69,5 +219,28 @@ const StyleFicheros = styled.div`
       display: grid;
       grid-template-columns: 50% 50%;
     }
+  }
+
+  /* SCROLL CONTAINER */
+  .scroll-container {
+    overflow: scroll;
+    height: 64vh;
+    width: auto;
+    overflow-x: hidden;
+  }
+  .scroll-container::-webkit-scrollbar {
+    width: 5.5px;
+  }
+  /* Track */
+  .scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  /* Handle */
+  .scroll-container::-webkit-scrollbar-thumb {
+    background: #d6d0d0;
+  }
+  /* Handle on hover */
+  .scroll-container::-webkit-scrollbar-thumb:hover {
+    background: rgb(160, 139, 139);
   }
 `;

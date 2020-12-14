@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+import React, { Fragment } from "react";
 import { v4 as uuidv4 } from 'uuid';
 
 function IconExtension({ extension }) {
@@ -8,6 +8,7 @@ function IconExtension({ extension }) {
     "pptx",
     "txt",
     "jpg",
+    "jpeg",
     "png",
     "gif",
     "doc",
@@ -25,11 +26,13 @@ function IconExtension({ extension }) {
   const result = listIcons.map((icon) => {
     let iconExtension = null;
     if (icon === extension) {
-      iconExtension = require(`../iconos/${icon}.svg`);
+      iconExtension = require(`../iconos/${icon}.svg`).default
     }
     return (
       <Fragment key={uuidv4()}>
-        <img src={iconExtension} alt="" />
+        {
+          iconExtension !== null && <img src={iconExtension} alt="" />
+        }
       </Fragment>
     );
   });
