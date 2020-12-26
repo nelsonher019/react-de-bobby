@@ -6,10 +6,9 @@ function Upload() {
   const [Files, setFiles] = useState(null);
   const [AboutFiles, setAboutFiles] = useState([]);
   const changeFiles = (e) => {
-    setFiles(e.target.files);
+    setFiles(e.target.files[0]);
     let filesDescription = [];
     for (const iterator of e.target.files) {
-        console.log(iterator);
       filesDescription.push({
         ...AboutFiles,
         name: iterator.name,
@@ -22,10 +21,14 @@ function Upload() {
   };
   return (
     <Fragment>
-      {Files === null ? (
+      {Files === null || AboutFiles.length === 0 ? (
         <SelectFiles changeFiles={changeFiles} />
       ) : (
-       <FilesSelected AboutFiles={AboutFiles}/>
+        <FilesSelected
+          Files={Files}
+          setAboutFiles={setAboutFiles}
+          AboutFiles={AboutFiles}
+        />
       )}
     </Fragment>
   );
